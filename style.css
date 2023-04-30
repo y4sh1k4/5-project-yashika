@@ -1,0 +1,138 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+header{
+    height:50px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    background-color: #fdf1eb;
+    flex-basis: 40%;
+}
+
+img[alt="logo"]{
+    width: 150px;
+    height: auto;
+}
+
+ul{
+    display:flex;
+    list-style-type: none;
+    gap:20px;
+    align-items: center;
+    font-weight: 700;
+    font-size: small;
+}
+
+ul>li>a{
+    text-decoration: none;
+    color: black;
+}
+
+main{
+    display: flex;
+    gap: 200px;
+}
+
+img[alt="Earnings"]{
+    height: auto;
+    width: 350px;
+}
+
+.content-left{
+    flex-basis: 40%;
+    padding-left: 100px;
+    margin-top: 30px;
+    background-color: #fdf1eb;
+
+}
+
+.content-right{
+    width:40%;
+    margin-top: 100px;
+}
+
+.content-right *{
+    margin-bottom: 20px;
+}
+
+.content-right h1{
+    font-size: 70px;
+    font-weight: 1000;
+}
+
+.content-right p{
+    color: #a9a6ac;
+}
+
+.content-right h6{
+    color: #a9a6ac;
+    margin-top: 80px;
+}
+
+.content-right p>a {
+    color: #e22e39;
+}
+
+.log-in{
+    padding: 10px 20px;
+    background: red;
+    outline: none;
+    border:none;
+    border-radius: 50px;
+    color: white;
+    font-weight: 700;
+
+}
+
+.login{
+    color: white;
+}
+.nest{
+    position: relative;
+}
+
+.code{
+    position: absolute;
+    padding: 10px 180px;
+    padding-left: 10px;
+    border-radius: 50px;
+    border:1px solid dimgray;
+    color:dimgray;
+}
+
+.Next{
+    position: absolute;
+    left:48%;
+    padding: 11px 60px;
+    background: red;
+    color: white;
+    font-weight: 700;
+    outline: none;
+    border:none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+li a::after{
+    content:' ';
+    display:block;
+    height: 4px;
+    width: 0;
+    background: red;
+    transition: all .5s;
+}
+
+li a:hover::after {
+    width: 100%;
+}
